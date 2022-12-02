@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(227, 235, 246);
+    width: 95vw;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
+}
+.div-1{
+    text-align: center;
+}
+.div-1 h1{
+    color: rgb(80, 135, 246);
+    font-size: 65px;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.div-1 p{
+    font-size: 30px;
+    width: 490px;
+    margin-left: 10px;
+    text-align: justify;
+}
+.div-2{
+    text-align: center;
+    padding: 5px 10px;
+    background-color: rgb(252, 252, 252);
+    width: 390px;
+    height: 350px;
+    margin-left: 10px;
+    display: grid;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.login{
+    display: flex;
+    flex-direction: column;
+}
+.login input{
+    border-radius: 7px;
+    border: 1px solid rgb(245, 245, 245);
+    padding: 13px;
+    align-items: center;
+    margin-top: 15px;
+}
+input:focus{
+    outline-color: rgb(32, 157, 240);
+}
+.login input::placeholder{
+    font-size: 17px;
+    align-items: center;
+    color: rgb(218, 218, 218);
+}
+.botao{
+    background-color: rgb(82, 145, 245);
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.senha{
+    color: rgb(0, 128, 255);
+    font-size: 17px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+hr{
+    height: 0px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(245, 245, 245);
+    margin-bottom: 30px;
+}
+.nova-conta{
+    padding: 13px 20px;
+    background-color: rgb(60, 199, 60);
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.div-3{
+    margin-bottom: 18px;
+}
+
+@media (max-width: 920px) {
+    .container{
+        flex-direction: column;
+    }
+    .div-1 h1{
+        font-size: 3em;
+    }
+    .div-1 .paragrafo{
+        font-size: 1.5em;
+        width: 350px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    .div-2{
+        width: 300px;
+        height: 350px;
+        align-items: center;
+        margin-left: 15px;
+    }
+
+    hr{
+        display: none;
+    }
+}
